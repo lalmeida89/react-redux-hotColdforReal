@@ -23,6 +23,7 @@ export default class Game extends React.Component {
       auralStatus: '',
       correctAnswer: Math.floor(Math.random() * 100) + 1
     });
+    console.log('hello');
   }
 
   makeGuess(guess) {
@@ -92,7 +93,7 @@ export default class Game extends React.Component {
             guessCount={guessCount}
             onMakeGuess={guess => this.makeGuess(guess)}
           />
-          <StatusSection guesses={guesses} 
+          <StatusSection guesses={guesses}
             auralStatus={auralStatus}
           />
           <InfoSection />
